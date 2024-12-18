@@ -2,7 +2,7 @@ import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react'
 import { setCredentials } from '../../features/auth/authSlice'
 
 const baseQuery = fetchBaseQuery({
-    baseUrl: 'https://technotes-api.onrender.com',
+    baseUrl: 'https://technotes-api-gpxr.onrender.com',
     credentials: 'include',  
     prepareHeaders: (headers, { getState }) => {     // adds a header to each request to the API (getState comes from api object)
         const token = getState().auth.token     // get current state . auth slice of the state . token (access token)
